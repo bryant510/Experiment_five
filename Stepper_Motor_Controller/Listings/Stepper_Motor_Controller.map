@@ -1,0 +1,313 @@
+Component: Arm Compiler for Embedded 6.22 Tool: armlink [5ee90200]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(.text.main) refers to systick_delay.o(.text.SysTick_Delay_Init) for SysTick_Delay_Init
+    main.o(.text.main) refers to stepper_motor.o(.text.Stepper_Motor_Init) for Stepper_Motor_Init
+    main.o(.text.main) refers to pmod_btn_interrupt.o(.text.PMOD_BTN_Interrupt_Init) for PMOD_BTN_Interrupt_Init
+    main.o(.text.main) refers to systick_delay.o(.text.SysTick_Delay1us) for SysTick_Delay1us
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.RGB_LED_Init) refers to gpio.o(.text.RGB_LED_Init) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.RGB_LED_Output) refers to gpio.o(.text.RGB_LED_Output) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.RGB_LED_Status) refers to gpio.o(.text.RGB_LED_Status) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.EduBase_LEDs_Init) refers to gpio.o(.text.EduBase_LEDs_Init) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.EduBase_LEDs_Output) refers to gpio.o(.text.EduBase_LEDs_Output) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.EduBase_Button_Init) refers to gpio.o(.text.EduBase_Button_Init) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.Get_EduBase_Button_Status) refers to gpio.o(.text.Get_EduBase_Button_Status) for [Anonymous Symbol]
+    gpio.o(.ARM.exidx.text.Change_Counter_Speed) refers to gpio.o(.text.Change_Counter_Speed) for [Anonymous Symbol]
+    systick_delay.o(.ARM.exidx.text.SysTick_Delay_Init) refers to systick_delay.o(.text.SysTick_Delay_Init) for [Anonymous Symbol]
+    systick_delay.o(.text.SysTick_Delay1us) refers to systick_delay.o(.bss.us_elapsed) for us_elapsed
+    systick_delay.o(.ARM.exidx.text.SysTick_Delay1us) refers to systick_delay.o(.text.SysTick_Delay1us) for [Anonymous Symbol]
+    systick_delay.o(.text.SysTick_Delay1ms) refers to systick_delay.o(.bss.us_elapsed) for us_elapsed
+    systick_delay.o(.text.SysTick_Delay1ms) refers to systick_delay.o(.bss.ms_elapsed) for ms_elapsed
+    systick_delay.o(.text.SysTick_Delay1ms) refers to systick_delay.o(.bss.ms_active) for ms_active
+    systick_delay.o(.ARM.exidx.text.SysTick_Delay1ms) refers to systick_delay.o(.text.SysTick_Delay1ms) for [Anonymous Symbol]
+    systick_delay.o(.text.SysTick_Handler) refers to systick_delay.o(.bss.us_elapsed) for us_elapsed
+    systick_delay.o(.text.SysTick_Handler) refers to systick_delay.o(.bss.ms_active) for ms_active
+    systick_delay.o(.text.SysTick_Handler) refers to systick_delay.o(.bss.ms_elapsed) for ms_elapsed
+    systick_delay.o(.ARM.exidx.text.SysTick_Handler) refers to systick_delay.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    buzzer.o(.ARM.exidx.text.Buzzer_Init) refers to buzzer.o(.text.Buzzer_Init) for [Anonymous Symbol]
+    buzzer.o(.ARM.exidx.text.Buzzer_Output) refers to buzzer.o(.text.Buzzer_Output) for [Anonymous Symbol]
+    buzzer.o(.text.Play_Note) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
+    buzzer.o(.text.Play_Note) refers to dmul.o(x$fpl$dmul) for __aeabi_dmul
+    buzzer.o(.text.Play_Note) refers to dfix.o(x$fpl$dfix) for __aeabi_d2iz
+    buzzer.o(.text.Play_Note) refers to buzzer.o(.text.Buzzer_Output) for Buzzer_Output
+    buzzer.o(.text.Play_Note) refers to systick_delay.o(.text.SysTick_Delay1us) for SysTick_Delay1us
+    buzzer.o(.ARM.exidx.text.Play_Note) refers to buzzer.o(.text.Play_Note) for [Anonymous Symbol]
+    timer_0a_interrupt.o(.text.Timer_0A_Interrupt_Init) refers to timer_0a_interrupt.o(.bss.Timer_0A_Task) for Timer_0A_Task
+    timer_0a_interrupt.o(.ARM.exidx.text.Timer_0A_Interrupt_Init) refers to timer_0a_interrupt.o(.text.Timer_0A_Interrupt_Init) for [Anonymous Symbol]
+    timer_0a_interrupt.o(.text.TIMER0A_Handler) refers to timer_0a_interrupt.o(.bss.Timer_0A_Task) for Timer_0A_Task
+    timer_0a_interrupt.o(.ARM.exidx.text.TIMER0A_Handler) refers to timer_0a_interrupt.o(.text.TIMER0A_Handler) for [Anonymous Symbol]
+    seven_segment_display.o(.ARM.exidx.text.Seven_Segment_Display_Init) refers to seven_segment_display.o(.text.Seven_Segment_Display_Init) for [Anonymous Symbol]
+    seven_segment_display.o(.ARM.exidx.text.SSI2_Write) refers to seven_segment_display.o(.text.SSI2_Write) for [Anonymous Symbol]
+    seven_segment_display.o(.ARM.exidx.text.Count_Digits) refers to seven_segment_display.o(.text.Count_Digits) for [Anonymous Symbol]
+    seven_segment_display.o(.text.Seven_Segment_Display) refers to seven_segment_display.o(.rodata.number_pattern) for number_pattern
+    seven_segment_display.o(.text.Seven_Segment_Display) refers to seven_segment_display.o(.text.SSI2_Write) for SSI2_Write
+    seven_segment_display.o(.text.Seven_Segment_Display) refers to seven_segment_display.o(.text.Count_Digits) for Count_Digits
+    seven_segment_display.o(.text.Seven_Segment_Display) refers to systick_delay.o(.text.SysTick_Delay1ms) for SysTick_Delay1ms
+    seven_segment_display.o(.ARM.exidx.text.Seven_Segment_Display) refers to seven_segment_display.o(.text.Seven_Segment_Display) for [Anonymous Symbol]
+    seven_segment_display.o(.text.Seven_Segment_Display_Stopwatch) refers to seven_segment_display.o(.rodata.number_pattern) for number_pattern
+    seven_segment_display.o(.text.Seven_Segment_Display_Stopwatch) refers to seven_segment_display.o(.text.SSI2_Write) for SSI2_Write
+    seven_segment_display.o(.text.Seven_Segment_Display_Stopwatch) refers to systick_delay.o(.text.SysTick_Delay1ms) for SysTick_Delay1ms
+    seven_segment_display.o(.ARM.exidx.text.Seven_Segment_Display_Stopwatch) refers to seven_segment_display.o(.text.Seven_Segment_Display_Stopwatch) for [Anonymous Symbol]
+    edubase_button_interrupt.o(.text.EduBase_Button_Interrupt_Init) refers to edubase_button_interrupt.o(.bss.EduBase_Button_Task) for EduBase_Button_Task
+    edubase_button_interrupt.o(.ARM.exidx.text.EduBase_Button_Interrupt_Init) refers to edubase_button_interrupt.o(.text.EduBase_Button_Interrupt_Init) for [Anonymous Symbol]
+    edubase_button_interrupt.o(.text.GPIOD_Handler) refers to edubase_button_interrupt.o(.bss.EduBase_Button_Task) for EduBase_Button_Task
+    edubase_button_interrupt.o(.text.GPIOD_Handler) refers to gpio.o(.text.Get_EduBase_Button_Status) for Get_EduBase_Button_Status
+    edubase_button_interrupt.o(.ARM.exidx.text.GPIOD_Handler) refers to edubase_button_interrupt.o(.text.GPIOD_Handler) for [Anonymous Symbol]
+    pmod_btn_interrupt.o(.text.PMOD_BTN_Interrupt_Init) refers to pmod_btn_interrupt.o(.bss.PMOD_BTN_Task) for PMOD_BTN_Task
+    pmod_btn_interrupt.o(.ARM.exidx.text.PMOD_BTN_Interrupt_Init) refers to pmod_btn_interrupt.o(.text.PMOD_BTN_Interrupt_Init) for [Anonymous Symbol]
+    pmod_btn_interrupt.o(.ARM.exidx.text.PMOD_BTN_Read) refers to pmod_btn_interrupt.o(.text.PMOD_BTN_Read) for [Anonymous Symbol]
+    pmod_btn_interrupt.o(.text.GPIOA_Handler) refers to pmod_btn_interrupt.o(.bss.PMOD_BTN_Task) for PMOD_BTN_Task
+    pmod_btn_interrupt.o(.text.GPIOA_Handler) refers to pmod_btn_interrupt.o(.text.PMOD_BTN_Read) for PMOD_BTN_Read
+    pmod_btn_interrupt.o(.ARM.exidx.text.GPIOA_Handler) refers to pmod_btn_interrupt.o(.text.GPIOA_Handler) for [Anonymous Symbol]
+    pwm_clock.o(.ARM.exidx.text.PWM_Clock_Init) refers to pwm_clock.o(.text.PWM_Clock_Init) for [Anonymous Symbol]
+    pwm0_0.o(.ARM.exidx.text.PWM0_0_Init) refers to pwm0_0.o(.text.PWM0_0_Init) for [Anonymous Symbol]
+    pwm0_0.o(.ARM.exidx.text.PWM0_0_Update_Duty_Cycle) refers to pwm0_0.o(.text.PWM0_0_Update_Duty_Cycle) for [Anonymous Symbol]
+    pwm1_3.o(.ARM.exidx.text.PWM1_3_Init) refers to pwm1_3.o(.text.PWM1_3_Init) for [Anonymous Symbol]
+    pwm1_3.o(.ARM.exidx.text.PWM1_3_Update_Duty_Cycle) refers to pwm1_3.o(.text.PWM1_3_Update_Duty_Cycle) for [Anonymous Symbol]
+    stepper_motor.o(.ARM.exidx.text.Stepper_Motor_Init) refers to stepper_motor.o(.text.Stepper_Motor_Init) for [Anonymous Symbol]
+    startup_tm4c123.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(STACK) for __initial_sp
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(.text) for Reset_Handler
+    startup_tm4c123.o(RESET) refers to systick_delay.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_tm4c123.o(RESET) refers to pmod_btn_interrupt.o(.text.GPIOA_Handler) for GPIOA_Handler
+    startup_tm4c123.o(RESET) refers to edubase_button_interrupt.o(.text.GPIOD_Handler) for GPIOD_Handler
+    startup_tm4c123.o(RESET) refers to timer_0a_interrupt.o(.text.TIMER0A_Handler) for TIMER0A_Handler
+    startup_tm4c123.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_tm4c123.o(.text) refers to system_tm4c123.o(.text.SystemInit) for SystemInit
+    startup_tm4c123.o(.text) refers to __main.o(!!!main) for __main
+    startup_tm4c123.o(.text) refers to startup_tm4c123.o(HEAP) for Heap_Mem
+    startup_tm4c123.o(.text) refers to startup_tm4c123.o(STACK) for Stack_Mem
+    system_tm4c123.o(.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.text.getOscClk) for getOscClk
+    system_tm4c123.o(.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.data.SystemCoreClock) for SystemCoreClock
+    system_tm4c123.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_tm4c123.o(.ARM.exidx.text.getOscClk) refers to system_tm4c123.o(.text.getOscClk) for [Anonymous Symbol]
+    system_tm4c123.o(.ARM.exidx.text.SystemInit) refers to system_tm4c123.o(.text.SystemInit) for [Anonymous Symbol]
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    ddiv.o(x$fpl$drdiv) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    ddiv.o(x$fpl$drdiv) refers to ddiv.o(x$fpl$ddiv) for ddiv_entry
+    ddiv.o(x$fpl$ddiv) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    ddiv.o(x$fpl$ddiv) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    ddiv.o(x$fpl$ddiv) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dfix.o(x$fpl$dfix) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dfix.o(x$fpl$dfix) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dfix.o(x$fpl$dfixr) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dfix.o(x$fpl$dfixr) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    dmul.o(x$fpl$dmul) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dmul.o(x$fpl$dmul) refers to dretinf.o(x$fpl$dretinf) for __fpl_dretinf
+    dmul.o(x$fpl$dmul) refers to dnaninf.o(x$fpl$dnaninf) for __fpl_dnaninf
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    dnaninf.o(x$fpl$dnaninf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    dretinf.o(x$fpl$dretinf) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(.text.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_tm4c123.o(.text) for __user_initial_stackheap
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000034) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000001) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000006) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000010) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_relocate_pie_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000035) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000027) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    libinit2.o(.ARM.Collect$$libinit$$00000001) refers to fpinit.o(x$fpl$fpinit) for _fp_init
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$0000001A) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000028) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000029) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_exit_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_command_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_wrch_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.rodata..L__const.main.half_step), (7 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing gpio.o(.text), (0 bytes).
+    Removing gpio.o(.text.RGB_LED_Init), (82 bytes).
+    Removing gpio.o(.ARM.exidx.text.RGB_LED_Init), (8 bytes).
+    Removing gpio.o(.text.RGB_LED_Output), (32 bytes).
+    Removing gpio.o(.ARM.exidx.text.RGB_LED_Output), (8 bytes).
+    Removing gpio.o(.text.RGB_LED_Status), (28 bytes).
+    Removing gpio.o(.ARM.exidx.text.RGB_LED_Status), (8 bytes).
+    Removing gpio.o(.text.EduBase_LEDs_Init), (82 bytes).
+    Removing gpio.o(.ARM.exidx.text.EduBase_LEDs_Init), (8 bytes).
+    Removing gpio.o(.text.EduBase_LEDs_Output), (32 bytes).
+    Removing gpio.o(.ARM.exidx.text.EduBase_LEDs_Output), (8 bytes).
+    Removing gpio.o(.text.EduBase_Button_Init), (66 bytes).
+    Removing gpio.o(.ARM.exidx.text.EduBase_Button_Init), (8 bytes).
+    Removing gpio.o(.ARM.exidx.text.Get_EduBase_Button_Status), (8 bytes).
+    Removing gpio.o(.text.Change_Counter_Speed), (86 bytes).
+    Removing gpio.o(.ARM.exidx.text.Change_Counter_Speed), (8 bytes).
+    Removing gpio.o(.rodata.RGB_LED_OFF), (1 bytes).
+    Removing gpio.o(.rodata.RGB_LED_RED), (1 bytes).
+    Removing gpio.o(.rodata.RGB_LED_BLUE), (1 bytes).
+    Removing gpio.o(.rodata.RGB_LED_GREEN), (1 bytes).
+    Removing gpio.o(.rodata.EDUBASE_LED_ALL_OFF), (1 bytes).
+    Removing gpio.o(.rodata.EDUBASE_LED_ALL_ON), (1 bytes).
+    Removing systick_delay.o(.text), (0 bytes).
+    Removing systick_delay.o(.ARM.exidx.text.SysTick_Delay_Init), (8 bytes).
+    Removing systick_delay.o(.ARM.exidx.text.SysTick_Delay1us), (8 bytes).
+    Removing systick_delay.o(.text.SysTick_Delay1ms), (76 bytes).
+    Removing systick_delay.o(.ARM.exidx.text.SysTick_Delay1ms), (8 bytes).
+    Removing systick_delay.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing buzzer.o(.text), (0 bytes).
+    Removing buzzer.o(.text.Buzzer_Init), (66 bytes).
+    Removing buzzer.o(.ARM.exidx.text.Buzzer_Init), (8 bytes).
+    Removing buzzer.o(.text.Buzzer_Output), (32 bytes).
+    Removing buzzer.o(.ARM.exidx.text.Buzzer_Output), (8 bytes).
+    Removing buzzer.o(.text.Play_Note), (144 bytes).
+    Removing buzzer.o(.ARM.exidx.text.Play_Note), (8 bytes).
+    Removing buzzer.o(.rodata.BUZZER_OFF), (1 bytes).
+    Removing buzzer.o(.rodata.BUZZER_ON), (1 bytes).
+    Removing buzzer.o(.rodata.C4_NOTE), (8 bytes).
+    Removing buzzer.o(.rodata.D4_NOTE), (8 bytes).
+    Removing buzzer.o(.rodata.E4_NOTE), (8 bytes).
+    Removing buzzer.o(.rodata.F4_NOTE), (8 bytes).
+    Removing buzzer.o(.rodata.G4_NOTE), (8 bytes).
+    Removing buzzer.o(.rodata.A4_NOTE), (8 bytes).
+    Removing buzzer.o(.rodata.B4_NOTE), (8 bytes).
+    Removing buzzer.o(.rodata.C5_NOTE), (8 bytes).
+    Removing timer_0a_interrupt.o(.text), (0 bytes).
+    Removing timer_0a_interrupt.o(.text.Timer_0A_Interrupt_Init), (172 bytes).
+    Removing timer_0a_interrupt.o(.ARM.exidx.text.Timer_0A_Interrupt_Init), (8 bytes).
+    Removing timer_0a_interrupt.o(.ARM.exidx.text.TIMER0A_Handler), (8 bytes).
+    Removing seven_segment_display.o(.text), (0 bytes).
+    Removing seven_segment_display.o(.text.Seven_Segment_Display_Init), (228 bytes).
+    Removing seven_segment_display.o(.ARM.exidx.text.Seven_Segment_Display_Init), (8 bytes).
+    Removing seven_segment_display.o(.text.SSI2_Write), (78 bytes).
+    Removing seven_segment_display.o(.ARM.exidx.text.SSI2_Write), (8 bytes).
+    Removing seven_segment_display.o(.text.Count_Digits), (52 bytes).
+    Removing seven_segment_display.o(.ARM.exidx.text.Count_Digits), (8 bytes).
+    Removing seven_segment_display.o(.text.Seven_Segment_Display), (152 bytes).
+    Removing seven_segment_display.o(.ARM.exidx.text.Seven_Segment_Display), (8 bytes).
+    Removing seven_segment_display.o(.text.Seven_Segment_Display_Stopwatch), (114 bytes).
+    Removing seven_segment_display.o(.ARM.exidx.text.Seven_Segment_Display_Stopwatch), (8 bytes).
+    Removing seven_segment_display.o(.rodata.number_pattern), (16 bytes).
+    Removing edubase_button_interrupt.o(.text), (0 bytes).
+    Removing edubase_button_interrupt.o(.text.EduBase_Button_Interrupt_Init), (212 bytes).
+    Removing edubase_button_interrupt.o(.ARM.exidx.text.EduBase_Button_Interrupt_Init), (8 bytes).
+    Removing edubase_button_interrupt.o(.ARM.exidx.text.GPIOD_Handler), (8 bytes).
+    Removing pmod_btn_interrupt.o(.text), (0 bytes).
+    Removing pmod_btn_interrupt.o(.ARM.exidx.text.PMOD_BTN_Interrupt_Init), (8 bytes).
+    Removing pmod_btn_interrupt.o(.ARM.exidx.text.PMOD_BTN_Read), (8 bytes).
+    Removing pmod_btn_interrupt.o(.ARM.exidx.text.GPIOA_Handler), (8 bytes).
+    Removing pwm_clock.o(.text), (0 bytes).
+    Removing pwm_clock.o(.text.PWM_Clock_Init), (34 bytes).
+    Removing pwm_clock.o(.ARM.exidx.text.PWM_Clock_Init), (8 bytes).
+    Removing pwm0_0.o(.text), (0 bytes).
+    Removing pwm0_0.o(.text.PWM0_0_Init), (224 bytes).
+    Removing pwm0_0.o(.ARM.exidx.text.PWM0_0_Init), (8 bytes).
+    Removing pwm0_0.o(.text.PWM0_0_Update_Duty_Cycle), (26 bytes).
+    Removing pwm0_0.o(.ARM.exidx.text.PWM0_0_Update_Duty_Cycle), (8 bytes).
+    Removing pwm1_3.o(.text), (0 bytes).
+    Removing pwm1_3.o(.text.PWM1_3_Init), (224 bytes).
+    Removing pwm1_3.o(.ARM.exidx.text.PWM1_3_Init), (8 bytes).
+    Removing pwm1_3.o(.text.PWM1_3_Update_Duty_Cycle), (26 bytes).
+    Removing pwm1_3.o(.ARM.exidx.text.PWM1_3_Update_Duty_Cycle), (8 bytes).
+    Removing stepper_motor.o(.text), (0 bytes).
+    Removing stepper_motor.o(.ARM.exidx.text.Stepper_Motor_Init), (8 bytes).
+    Removing system_tm4c123.o(.text), (0 bytes).
+    Removing system_tm4c123.o(.text.SystemCoreClockUpdate), (326 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_tm4c123.o(.text.getOscClk), (360 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.getOscClk), (8 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_tm4c123.o(.data.SystemCoreClock), (4 bytes).
+
+95 unused section(s) (total 3353 bytes) removed from the image.
