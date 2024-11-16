@@ -11,7 +11,7 @@
  *  - ULN2003 Stepper Motor Driver
  *  - 3.3V / 5V Breadboard Power Supply Module (External Power Source)
  *
- * @author Aaron Nanas
+ * @author Bryant Cuenca
  */
 
 #include "Stepper_Motor.h"
@@ -46,7 +46,11 @@ void Stepper_Motor_Init()
 	//GPIO pins by clearing Bits 3 to 2 in the AFSEL register
 	GPIOF->AFSEL &= ~0x0C;
 	
-	//Enable the digital functionality for the PF3 and PF2 pins
-	//by setting Bits 3 to 2 in the DATA register
+	// Enable the digital functionality for the PF3 and PF2 pins
+	// by setting Bits 3 to 2 in the AFSEL register
+	GPIOF->DEN |= 0x0C;
+	
+	// Initialize the output of the PF3 and PF2 pins to high
+	// by setting Bits 3 to 2 in the DATA register
 	GPIOF->DATA |= 0x0C;
 }
